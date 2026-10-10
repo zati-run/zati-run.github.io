@@ -13,7 +13,8 @@
 <meta property="og:url" content="https://zati.run/">
 <meta property="og:image" content="https://zati.run/assets/zati.jpeg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/zati.png" type="image/png">
+<link rel="icon" href="assets/zati-master.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/zati-master.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
 .scene video{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
 .scene:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper) 0%,rgba(247,243,238,.88) 9%,rgba(247,243,238,.28) 26%,transparent 43%);pointer-events:none}
 header{display:flex;justify-content:space-between;align-items:center;padding:clamp(25px,4.4vh,52px) var(--gutter);gap:20px}
-.brand{display:block;position:relative;width:150px;height:44px;overflow:hidden;flex:none}.wordmark{position:absolute;width:220px;height:auto;max-width:none;left:50%;top:50%;transform:translate(-50%,-50%)}
+.brand{display:block;width:56px;height:56px;flex:none}.brand img{display:block;width:100%;height:100%;object-fit:contain}
 .status{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.12em;font-weight:500;white-space:nowrap}.status:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal)}
 main{flex:1;display:flex;align-items:center;padding:55px var(--gutter) 65px}
 .copy{width:min(55%,720px)}
@@ -37,7 +38,7 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:24px;pa
 @media(prefers-reduced-motion:no-preference){header{animation:arrive .7s both}.copy{animation:arrive .8s .12s both}footer{animation:arrive .8s .24s both}@keyframes arrive{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}}
 @media(min-width:1800px){.copy{width:740px}h1{font-size:96px}.description{font-size:21px}}
 @media(max-width:1050px){.scene{left:22%}.copy{width:60%}h1{font-size:clamp(48px,5.5vw,65px)}.description{max-width:350px}.scene:after{background:linear-gradient(90deg,var(--paper),rgba(247,243,238,.9) 15%,rgba(247,243,238,.45) 35%,transparent 55%)}}
-@media(max-width:760px){.page{min-height:100svh}.scene{position:relative;inset:auto;order:2;width:100%;height:clamp(290px,74vw,520px);z-index:0;background-position:50% 42%}.scene video{object-position:50% 42%}.scene:after{background:linear-gradient(180deg,var(--paper),rgba(247,243,238,0) 20%)}header{padding:27px var(--gutter) 20px}.brand{width:130px;height:38px}.wordmark{width:191px}.status{font-size:10px;letter-spacing:.08em}main{padding:38px var(--gutter) 20px;flex:none}.copy{width:100%;max-width:600px}.eyebrow{font-size:10px;margin-bottom:20px}h1{font-size:clamp(43px,8.2vw,63px);letter-spacing:-.058em;margin-bottom:24px}.description{font-size:16px;line-height:1.65;max-width:410px}.workshop{margin-top:28px}.cta{min-height:54px}.invitation{font-size:11px}.video-controls{order:3;margin-top:-60px;height:60px;align-items:center;padding:0 var(--gutter)}footer{order:4;padding:22px var(--gutter);background:var(--paper);gap:12px}.footer-note{font-size:10px;line-height:1.5;letter-spacing:0}.motion{min-height:44px;white-space:nowrap}}
+@media(max-width:760px){.page{min-height:100svh}.scene{position:relative;inset:auto;order:2;width:100%;height:clamp(290px,74vw,520px);z-index:0;background-position:50% 42%}.scene video{object-position:50% 42%}.scene:after{background:linear-gradient(180deg,var(--paper),rgba(247,243,238,0) 20%)}header{padding:27px var(--gutter) 20px}.brand{width:48px;height:48px}.status{font-size:10px;letter-spacing:.08em}main{padding:38px var(--gutter) 20px;flex:none}.copy{width:100%;max-width:600px}.eyebrow{font-size:10px;margin-bottom:20px}h1{font-size:clamp(43px,8.2vw,63px);letter-spacing:-.058em;margin-bottom:24px}.description{font-size:16px;line-height:1.65;max-width:410px}.workshop{margin-top:28px}.cta{min-height:54px}.invitation{font-size:11px}.video-controls{order:3;margin-top:-60px;height:60px;align-items:center;padding:0 var(--gutter)}footer{order:4;padding:22px var(--gutter);background:var(--paper);gap:12px}.footer-note{font-size:10px;line-height:1.5;letter-spacing:0}.motion{min-height:44px;white-space:nowrap}}
 @media(max-width:360px){h1{font-size:39px}.destination{display:none}.status{letter-spacing:0}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
@@ -45,7 +46,7 @@ footer{display:flex;justify-content:space-between;align-items:center;gap:24px;pa
 <body>
 <div class="page">
 <div class="scene" aria-hidden="true"><video id="scene" muted loop playsinline preload="none" poster="assets/zati.jpeg" disablepictureinpicture><source data-src="assets/zati.mp4" type="video/mp4"></video></div>
-<header><a class="brand" href="./" aria-label="Zati home"><img class="wordmark" src="assets/zati-wordmark-v2.png" width="2172" height="724" alt="Zati"></a><span class="status">Coming soon</span></header>
+<header><a class="brand" href="./" aria-label="Zati home"><img src="assets/zati-master.png" width="1024" height="1024" alt="Zati"></a><span class="status">Coming soon</span></header>
 <main id="main"><div class="copy"><p class="eyebrow">A little more room to breathe</p><h1><span>Let Zati run it</span><span>when you can’t.</span></h1><p class="description">Bring your business knowledge and daily work together, so others can pick up where you leave off.</p><div class="workshop"><p class="invitation">While Zati is on its way</p><div class="action-row"><a class="cta" href="https://sanifu.run/">Explore the workshop <span class="arrow" aria-hidden="true">↗</span></a><span class="destination">at Sanifu</span></div></div></div></main>
 <div class="video-controls"><button class="motion" type="button" aria-controls="scene" hidden>Play animation</button></div>
 <footer><p class="footer-note">© 2026 Sire Run, Inc.</p><p class="footer-note location">Built in California</p></footer>
